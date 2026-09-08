@@ -30,19 +30,24 @@
   </script>
 
   <!-- Custom Stylesheet with Cache Buster -->
-  <link rel="stylesheet" href="assets/css/style.css?v=8.0">
+  <link rel="stylesheet" href="assets/css/style.css?v=9.0">
 
-  <!-- Elegant Faded Damask Background Matching User Reference -->
+  <!-- Static Faded Damask Background (Scrolls with the page) -->
   <style>
     .damask-bg {
-      position: fixed !important;
-      inset: 0 !important;
+      position: absolute !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      height: 100vh !important;
+      min-height: 800px !important;
       pointer-events: none !important;
       z-index: 0 !important;
       background-color: #0b2b38 !important;
       background-image: 
+        linear-gradient(to bottom, transparent 75%, #0d2836 100%),
         radial-gradient(circle at 50% 45%, rgba(11, 43, 56, 0.35) 0%, rgba(9, 33, 44, 0.55) 65%, rgba(6, 20, 27, 0.85) 100%),
-        url('assets/images/faded_damask_bg.jpg?v=8.0') !important;
+        url('assets/images/faded_damask_bg.jpg?v=9.0') !important;
       background-size: cover !important;
       background-position: center center !important;
       background-repeat: no-repeat !important;
