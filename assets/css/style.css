@@ -60,20 +60,20 @@ body {
   min-height: 100vh;
 }
 
-/* French Baroque Damask Wallpaper */
+/* French Baroque Damask Wallpaper - Faded Vignette */
 .damask-bg {
   position: fixed;
   inset: 0;
   pointer-events: none;
   z-index: 0;
-  background-color: #0a1c25;
+  background-color: #0b2b38;
   background-image: 
-    radial-gradient(circle at 50% 35%, rgba(13, 40, 54, 0.35) 0%, rgba(10, 28, 37, 0.68) 65%, rgba(7, 20, 27, 0.92) 100%),
-    url('../images/new_damask_bg.jpg?v=7.0');
+    radial-gradient(circle at 50% 45%, rgba(11, 43, 56, 0.35) 0%, rgba(9, 33, 44, 0.55) 65%, rgba(6, 20, 27, 0.85) 100%),
+    url('../images/faded_damask_bg.jpg?v=8.0');
   background-size: cover;
-  background-position: center top;
+  background-position: center center;
   background-repeat: no-repeat;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 /* Page Frame Vignette */
