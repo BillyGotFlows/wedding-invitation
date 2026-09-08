@@ -60,20 +60,20 @@ body {
   min-height: 100vh;
 }
 
-/* Authentic Seamless French Baroque Damask Wallpaper (Vibrant & Clearly Visible) */
+/* Authentic French Baroque Damask Wallpaper (Zero Seams - Full Cover) */
 .damask-bg {
   position: fixed;
   inset: 0;
   pointer-events: none;
   z-index: 0;
-  background-color: #0d2836;
+  background-color: #0a1c25;
   background-image: 
-    radial-gradient(circle at 50% 30%, rgba(13, 40, 54, 0.35) 0%, rgba(10, 28, 37, 0.68) 60%, rgba(7, 20, 27, 0.92) 100%),
+    radial-gradient(circle at 50% 35%, rgba(19, 60, 80, 0.2) 0%, rgba(13, 40, 54, 0.55) 65%, rgba(10, 28, 37, 0.92) 100%),
     url('../images/seamless_damask_wallpaper.jpg');
-  background-size: cover, 500px auto;
-  background-position: center center, center top;
-  background-repeat: no-repeat, repeat;
-  opacity: 0.82;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  opacity: 0.88;
 }
 
 /* Page Frame Vignette */
