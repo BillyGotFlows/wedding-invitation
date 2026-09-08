@@ -60,7 +60,7 @@ body {
   min-height: 100vh;
 }
 
-/* Authentic French Baroque Damask Wallpaper (Guaranteed 100% Mathematical Zero Seams - Seamless Supercell) */
+/* French Baroque Damask Wallpaper */
 .damask-bg {
   position: fixed;
   inset: 0;
@@ -68,18 +68,12 @@ body {
   z-index: 0;
   background-color: #0a1c25;
   background-image: 
-    radial-gradient(circle at 50% 35%, rgba(13, 40, 54, 0.4) 0%, rgba(10, 28, 37, 0.72) 65%, rgba(7, 20, 27, 0.94) 100%),
-    url('../images/damask_supercell_seamless.jpg?v=6.0');
-  background-size: 520px auto;
+    radial-gradient(circle at 50% 35%, rgba(13, 40, 54, 0.35) 0%, rgba(10, 28, 37, 0.68) 65%, rgba(7, 20, 27, 0.92) 100%),
+    url('../images/new_damask_bg.jpg?v=7.0');
+  background-size: cover;
   background-position: center top;
-  background-repeat: repeat;
-  opacity: 0.88;
-}
-
-@media (max-width: 640px) {
-  .damask-bg {
-    background-size: 380px auto;
-  }
+  background-repeat: no-repeat;
+  opacity: 0.9;
 }
 
 /* Page Frame Vignette */

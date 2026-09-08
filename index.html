@@ -30,9 +30,9 @@
   </script>
 
   <!-- Custom Stylesheet with Cache Buster -->
-  <link rel="stylesheet" href="assets/css/style.css?v=6.0">
+  <link rel="stylesheet" href="assets/css/style.css?v=7.0">
 
-  <!-- Guaranteed Seam-Free Repeating Damask Background Override -->
+  <!-- New Damask Background -->
   <style>
     .damask-bg {
       position: fixed !important;
@@ -41,17 +41,12 @@
       z-index: 0 !important;
       background-color: #0a1c25 !important;
       background-image: 
-        radial-gradient(circle at 50% 35%, rgba(13, 40, 54, 0.4) 0%, rgba(10, 28, 37, 0.72) 65%, rgba(7, 20, 27, 0.94) 100%),
-        url('assets/images/damask_supercell_seamless.jpg?v=6.0') !important;
-      background-size: 520px auto !important;
+        radial-gradient(circle at 50% 35%, rgba(13, 40, 54, 0.35) 0%, rgba(10, 28, 37, 0.68) 65%, rgba(7, 20, 27, 0.92) 100%),
+        url('assets/images/new_damask_bg.jpg?v=7.0') !important;
+      background-size: cover !important;
       background-position: center top !important;
-      background-repeat: repeat !important;
-      opacity: 0.88 !important;
-    }
-    @media (max-width: 640px) {
-      .damask-bg {
-        background-size: 380px auto !important;
-      }
+      background-repeat: no-repeat !important;
+      opacity: 0.9 !important;
     }
   </style>
 </head>
