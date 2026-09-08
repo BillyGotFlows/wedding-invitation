@@ -60,18 +60,20 @@ body {
   min-height: 100vh;
 }
 
-/* Subtle Vector Damask Pattern Background (Clean & Perfectly Seamless) */
+/* Authentic Seamless French Baroque Damask Wallpaper */
 .damask-bg {
   position: fixed;
   inset: 0;
   pointer-events: none;
   z-index: 0;
-  background-color: var(--color-dark-navy);
+  background-color: #174A63;
   background-image: 
-    radial-gradient(circle at 50% 15%, rgba(23, 74, 99, 0.92) 0%, rgba(16, 47, 61, 0.97) 65%, rgba(10, 28, 37, 1) 100%),
-    url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23c9a85c' fill-opacity='0.04'%3E%3Cpath d='M40 0 C45 10, 55 15, 65 15 C55 25, 55 35, 40 40 C25 35, 25 25, 15 15 C25 15, 35 10, 40 0 Z M40 80 C45 70, 55 65, 65 65 C55 55, 55 45, 40 40 C25 45, 25 55, 15 65 C25 65, 35 70, 40 80 Z' /%3E%3Ccircle cx='40' cy='40' r='3' /%3E%3Ccircle cx='0' cy='40' r='2' /%3E%3Ccircle cx='80' cy='40' r='2' /%3E%3Ccircle cx='40' cy='0' r='2' /%3E%3Ccircle cx='40' cy='80' r='2' /%3E%3C/g%3E%3C/svg%3E");
-  background-repeat: repeat;
-  opacity: 1;
+    radial-gradient(ellipse at 50% 25%, rgba(23, 74, 99, 0.55) 0%, rgba(16, 47, 61, 0.82) 55%, rgba(10, 28, 37, 0.96) 100%),
+    url('../images/seamless_damask_wallpaper.jpg');
+  background-size: 100% 100%, 460px auto;
+  background-repeat: no-repeat, repeat;
+  background-blend-mode: multiply;
+  opacity: 0.95;
 }
 
 /* Page Frame Vignette */
