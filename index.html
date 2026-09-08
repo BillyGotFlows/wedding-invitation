@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>دعوة زفاف | بكري واتار & رحاب دللو</title>
+  
+  <!-- Meta description for social previews -->
+  <meta name="description" content="يتشرف بكري واتار ورحاب دللو بدعوتكم لحضور حفل زفافهما المبارك يوم الاثنين 28 أيلول 2026 في صالة ايفانكا - نادي الضباط - الفرقان">
+  <meta property="og:title" content="دعوة زفاف بكري واتار & رحاب دللو">
+  <meta property="og:description" content="حفل زفاف مبارك - 28 أيلول 2026 في صالة ايفانكا، نادي الضباط، الفرقان">
+  <meta property="og:type" content="website">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'royal-blue': '#174A63',
+            'dark-navy': '#102F3D',
+            'antique-gold': '#C9A85C',
+            'champagne': '#E8D7A8',
+            'ivory': '#F8F3E7',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="relative min-h-screen text-ivory antialiased selection:bg-antique-gold selection:text-dark-navy">
+
+  <!-- Chateau Gold Border Frame -->
+  <div class="chateau-frame"></div>
+
+  <!-- Damask Wallpaper Pattern Overlay -->
+  <div class="damask-bg"></div>
+
+  <!-- SVG Baroque Definitions for reusable ornaments -->
+  <svg class="hidden" aria-hidden="true">
+    <defs>
+      <!-- Gold Linear Gradient -->
+      <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#F8F3E7" />
+        <stop offset="35%" stop-color="#E8D7A8" />
+        <stop offset="70%" stop-color="#C9A85C" />
+        <stop offset="100%" stop-color="#B89648" />
+      </linearGradient>
+
+      <!-- Baroque Symmetrical Divider Ornament -->
+      <g id="baroque-divider">
+        <path d="M0,25 C35,25 45,5 75,5 C105,5 110,35 140,25 C155,20 165,12 180,25 C195,12 205,20 220,25 C250,35 255,5 285,5 C315,5 325,25 360,25" fill="none" stroke="url(#goldGradient)" stroke-width="1.6" />
+        <circle cx="180" cy="25" r="4.5" fill="url(#goldGradient)" />
+        <circle cx="160" cy="25" r="2.5" fill="url(#goldGradient)" />
+        <circle cx="200" cy="25" r="2.5" fill="url(#goldGradient)" />
+        <!-- Acanthus leaves center top -->
+        <path d="M180,25 C175,10 165,3 180,0 C195,3 185,10 180,25 Z" fill="url(#goldGradient)" opacity="0.9" />
+        <!-- Acanthus leaves center bottom -->
+        <path d="M180,25 C175,40 165,47 180,50 C195,47 185,40 180,25 Z" fill="url(#goldGradient)" opacity="0.9" />
+      </g>
+
+      <!-- Baroque Corner Flourish -->
+      <g id="baroque-corner">
+        <path d="M4,4 L28,4 C28,10 24,14 18,14 C18,20 22,24 22,30 C16,30 14,24 14,18 C14,12 10,8 4,8 Z" fill="url(#goldGradient)" />
+        <path d="M4,4 L4,28 C10,28 14,24 14,18 C20,18 24,22 30,22 C30,16 24,14 18,14 C12,14 8,10 8,4 Z" fill="url(#goldGradient)" />
+        <circle cx="6" cy="6" r="2" fill="url(#goldGradient)" />
+      </g>
+    </defs>
+  </svg>
+
+  <!-- ========================================================================= -->
+  <!-- 1. ENVELOPE ENTRANCE / WAX SEAL MODAL                                     -->
+  <!-- ========================================================================= -->
+  <div id="envelope-overlay" role="dialog" aria-modal="true" aria-label="دعوة زفاف خاصة">
+    <div class="envelope-card floating-anim">
+      <!-- Corner ornaments -->
+      <svg class="corner-flourish corner-tl"><use href="#baroque-corner" /></svg>
+      <svg class="corner-flourish corner-tr"><use href="#baroque-corner" /></svg>
+      <svg class="corner-flourish corner-bl"><use href="#baroque-corner" /></svg>
+      <svg class="corner-flourish corner-br"><use href="#baroque-corner" /></svg>
+
+      <!-- 3D Sculpted Royal Baroque Crest Seal -->
+      <div id="wax-seal" class="group cursor-pointer mx-auto mb-6 w-36 h-36 sm:w-44 sm:h-44 rounded-full p-1 border-2 border-antique-gold/90 shadow-2xl bg-dark-navy/90 overflow-hidden transform hover:scale-105 transition-all duration-300 relative" title="انقر لفتح الدعوة">
+        <img src="assets/images/arabic_baroque_crest.jpg" alt="الختم الملكي للعروسين" class="w-full h-full object-cover rounded-full group-hover:rotate-1 transition-transform duration-500">
+        <div class="absolute inset-0 rounded-full border border-shimmer-gold/40 pointer-events-none"></div>
+      </div>
+
+      <p class="font-display text-xs tracking-[0.25em] text-champagne/90 uppercase mb-2">Château Wedding Invitation</p>
+      <h2 class="font-arabic-title text-3xl sm:text-4xl text-gold-gradient font-bold mb-3 drop-shadow">دعوة زفاف خاصة</h2>
+      <p class="font-arabic-serif text-lg text-ivory-muted mb-8 leading-relaxed">
+        حفل زفاف العريس <strong class="text-gold-gradient font-bold">بكري واتار</strong> والعروس <strong class="text-gold-gradient font-bold">رحاب دللو</strong>
+      </p>
+
+      <button id="open-invitation-btn" class="btn-baroque w-full max-w-xs mx-auto py-3.5 text-lg font-arabic-title tracking-wide shadow-xl">
+        <span>افتح الدعوة الملكية</span>
+        <svg class="w-5 h-5 text-dark-navy" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+        </svg>
+      </button>
+
+      <p class="font-arabic-serif text-xs text-ivory-muted mt-5 opacity-80">
+        انقر على الختم الملكي أو الزر لفتح تفاصيل الدعوة
+      </p>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- MAIN INVITATION CONTENT                                                   -->
+  <!-- ========================================================================= -->
+  <main class="relative z-10 max-w-3xl mx-auto px-4 py-16 sm:py-24 space-y-20">
+
+    <!-- ======================================================================= -->
+    <!-- HERO / INVITATION HEADER                                                -->
+    <!-- ======================================================================= -->
+    <header class="text-center space-y-6 pt-4">
+      
+      <!-- Quranic Blessing Verse -->
+      <div class="max-w-xl mx-auto px-4">
+        <p class="font-arabic-title text-xl sm:text-2xl text-champagne opacity-95 leading-loose">
+          بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
+        </p>
+        <p class="font-arabic-serif text-base sm:text-lg text-ivory-muted leading-relaxed mt-2 italic">
+          "وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً"
+        </p>
+      </div>
+
+      <!-- Symmetrical Baroque Acanthus Divider -->
+      <div class="flex justify-center my-4">
+        <svg class="w-72 sm:w-88 h-12" viewBox="0 0 360 50">
+          <use href="#baroque-divider" />
+        </svg>
+      </div>
+
+      <!-- Invitation Wording -->
+      <div class="space-y-4 pt-2">
+        <p class="font-arabic-serif text-xl sm:text-2xl text-champagne font-medium tracking-wide">
+          يتشرف كلّ من آل واتار وآل دللو بدعوتكم لحضور حفل زفاف
+        </p>
+        
+        <!-- Groom & Bride Regal Names in Noto Serif Arabic -->
+        <div class="py-6">
+          <h1 class="font-arabic-title text-5xl sm:text-7xl text-gold-gradient font-bold tracking-wide leading-tight drop-shadow-lg">
+            بكري واتار
+          </h1>
+          <div class="my-4 flex items-center justify-center gap-4">
+            <span class="h-px w-24 sm:w-32 bg-gradient-to-l from-transparent to-antique-gold/70"></span>
+            <span class="font-arabic-title text-2xl sm:text-3xl text-champagne font-bold px-2">و</span>
+            <span class="h-px w-24 sm:w-32 bg-gradient-to-r from-transparent to-antique-gold/70"></span>
+          </div>
+          <h1 class="font-arabic-title text-5xl sm:text-7xl text-gold-gradient font-bold tracking-wide leading-tight drop-shadow-lg">
+            رحاب دللو
+          </h1>
+        </div>
+
+        <p class="font-arabic-serif text-lg text-ivory-muted max-w-md mx-auto leading-relaxed">
+          فرحتنا تكتمل بوجودكم لتشاركونا أسعد اللحظات في ليلة العمر التي تجمع بين قلبينا.
+        </p>
+      </div>
+
+      <!-- Date Ribbon -->
+      <div class="inline-block mt-4 px-6 py-2 border-y border-antique-gold/40 bg-royal-blue/20">
+        <span class="font-sans text-xs tracking-widest text-champagne uppercase block mb-1">Save The Date</span>
+        <span class="font-arabic-serif text-xl sm:text-2xl text-ivory font-bold">
+          الاثنين، 28 أيلول / سبتمبر 2026
+        </span>
+      </div>
+
+    </header>
+
+    <!-- ======================================================================= -->
+    <!-- COUNTDOWN TIMER SECTION                                                 -->
+    <!-- ======================================================================= -->
+    <section class="reveal-on-scroll baroque-card text-center">
+      <!-- Corner ornaments -->
+      <svg class="corner-flourish corner-tl"><use href="#baroque-corner" /></svg>
+      <svg class="corner-flourish corner-tr"><use href="#baroque-corner" /></svg>
+      <svg class="corner-flourish corner-bl"><use href="#baroque-corner" /></svg>
+      <svg class="corner-flourish corner-br"><use href="#baroque-corner" /></svg>
+
+      <div class="baroque-card-inner">
+        <h2 class="font-arabic-title text-2xl sm:text-3xl text-champagne mb-2">
+          العدّ التنازلي لليوم الموعود
+        </h2>
+        <p class="font-arabic-serif text-sm text-ivory-muted mb-8">
+          ننتظر بشوق اللحظات التي تجمعنا بكم
+        </p>
+
+        <!-- Countdown Digits Display -->
+        <div class="flex justify-center items-center gap-2 sm:gap-4 flex-wrap" dir="ltr">
+          <!-- Days -->
+          <div class="countdown-box">
+            <span id="days" class="countdown-number">00</span>
+            <span class="countdown-label block">يوم</span>
+          </div>
+          <span class="text-antique-gold font-display text-2xl">:</span>
+          <!-- Hours -->
+          <div class="countdown-box">
+            <span id="hours" class="countdown-number">00</span>
+            <span class="countdown-label block">ساعة</span>
+          </div>
+          <span class="text-antique-gold font-display text-2xl">:</span>
+          <!-- Minutes -->
+          <div class="countdown-box">
+            <span id="minutes" class="countdown-number">00</span>
+            <span class="countdown-label block">دقيقة</span>
+          </div>
+          <span class="text-antique-gold font-display text-2xl">:</span>
+          <!-- Seconds -->
+          <div class="countdown-box">
+            <span id="seconds" class="countdown-number">00</span>
+            <span class="countdown-label block">ثانية</span>
+          </div>
+        </div>
+
+        <p id="countdown-message" class="font-arabic-serif text-sm text-champagne/90 mt-6 italic">
+          موعدنا يوم الاثنين 28 أيلول 2026 عند الساعة السابعة والنصف مساءً
+        </p>
+      </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- EVENT DETAILS & LOCATION SECTION                                        -->
+    <!-- ======================================================================= -->
+    <section class="reveal-on-scroll baroque-card">
+      <!-- Corner ornaments -->
+      <svg class="corner-flourish corner-tl"><use href="#baroque-corner" /></svg>
+      <svg class="corner-flourish corner-tr"><use href="#baroque-corner" /></svg>
+      <svg class="corner-flourish corner-bl"><use href="#baroque-corner" /></svg>
+      <svg class="corner-flourish corner-br"><use href="#baroque-corner" /></svg>
+
+      <div class="baroque-card-inner">
+        <div class="text-center mb-8">
+          <span class="font-sans text-xs tracking-widest text-champagne uppercase">Ceremony & Venue</span>
+          <h2 class="font-arabic-title text-3xl text-gold-gradient font-bold mt-1">تفاصيل الحفل والمكان</h2>
+          <div class="w-20 h-px bg-antique-gold mx-auto my-3 opacity-60"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+          
+          <!-- Date & Time Card -->
+          <div class="p-6 bg-dark-navy/60 border border-antique-gold/30 rounded flex flex-col justify-between text-center">
+            <div>
+              <div class="w-12 h-12 mx-auto mb-4 rounded-full border border-antique-gold/50 flex items-center justify-center text-champagne">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 class="font-arabic-title text-2xl text-champagne mb-2">الزمان والموعد</h3>
+              <p class="font-arabic-serif text-lg text-ivory font-bold">الاثنين 28 أيلول 2026</p>
+              <p class="font-arabic-serif text-base text-champagne mt-1">الساعة 7:30 مساءً</p>
+              <p class="text-xs text-ivory-muted mt-3">يرجى التكرم بالحضور في الموعد المحدد لمشاركتنا أولى لحظات الاحتفال</p>
+            </div>
+
+            <!-- Calendar Action Buttons -->
+            <div class="mt-6 pt-4 border-t border-antique-gold/20 flex flex-col gap-2">
+              <a id="google-calendar-btn" target="_blank" rel="noopener noreferrer" class="btn-baroque-outline py-2 px-4 rounded text-sm font-arabic-serif flex items-center justify-center gap-2">
+                <svg class="w-4 h-4 text-champagne" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/>
+                </svg>
+                <span>إضافة إلى تقويم Google</span>
+              </a>
+              <button id="apple-calendar-btn" class="text-xs text-ivory-muted hover:text-champagne transition underline">
+                تحميل ملف التقويم (Apple / Outlook .ics)
+              </button>
+            </div>
+          </div>
+
+          <!-- Location & Hall Card -->
+          <div class="p-6 bg-dark-navy/60 border border-antique-gold/30 rounded flex flex-col justify-between text-center">
+            <div>
+              <div class="w-12 h-12 mx-auto mb-4 rounded-full border border-antique-gold/50 flex items-center justify-center text-champagne">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <h3 class="font-arabic-title text-2xl text-champagne mb-2">المكان والقاعة</h3>
+              <p class="font-arabic-serif text-xl text-ivory font-bold">صالة ايفانكا</p>
+              <p class="font-arabic-serif text-base text-champagne mt-1">نادي الضباط - الفرقان</p>
+              <p class="text-xs text-ivory-muted mt-3">حلب - الجمهورية العربية السورية</p>
+            </div>
+
+            <!-- Maps Action Button -->
+            <div class="mt-6 pt-4 border-t border-antique-gold/20">
+              <a href="https://www.google.com/maps/search/?api=1&query=نادي+الضباط+الفرقان+صالة+ايفانكا" target="_blank" rel="noopener noreferrer" class="btn-baroque w-full text-base py-2.5">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                </svg>
+                <span>الموقع على خرائط Google</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- RSVP FORM SECTION                                                       -->
+    <!-- ======================================================================= -->
+    <section id="rsvp" class="reveal-on-scroll baroque-card">
+      <!-- Corner ornaments -->
+      <svg class="corner-flourish corner-tl"><use href="#baroque-corner" /></svg>
+      <svg class="corner-flourish corner-tr"><use href="#baroque-corner" /></svg>
+      <svg class="corner-flourish corner-bl"><use href="#baroque-corner" /></svg>
+      <svg class="corner-flourish corner-br"><use href="#baroque-corner" /></svg>
+
+      <div class="baroque-card-inner">
+        <div class="text-center mb-8">
+          <span class="font-sans text-xs tracking-widest text-champagne uppercase">Répondez S'il Vous Plaît</span>
+          <h2 class="font-arabic-title text-3xl text-gold-gradient font-bold mt-1">تأكيد الحضور (RSVP)</h2>
+          <p class="font-arabic-serif text-sm text-ivory-muted mt-2 max-w-md mx-auto">
+            يسعدنا تأكيد حضوركم الكريم لمشاركتنا الفرحة وتنظيم الترتيبات بما يليق بمقامكم.
+          </p>
+        </div>
+
+        <form id="rsvp-form" class="space-y-6 max-w-lg mx-auto">
+          
+          <!-- Name Input -->
+          <div>
+            <label for="rsvp-name" class="block font-arabic-serif text-base text-champagne mb-2">
+              الاسم الكريم <span class="text-red-400">*</span>
+            </label>
+            <input 
+              type="text" 
+              id="rsvp-name" 
+              name="name" 
+              required 
+              placeholder="اكتب اسمك الكريم هنا..." 
+              class="baroque-input text-right"
+            >
+          </div>
+
+          <!-- Attendance Status -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="rsvp-status" class="block font-arabic-serif text-base text-champagne mb-2">
+                تأكيد الحضور <span class="text-red-400">*</span>
+              </label>
+              <select id="rsvp-status" name="status" class="baroque-select text-right">
+                <option value="attending" selected>يشرفني الحضور بكل سرور 🌹</option>
+                <option value="declining">أعتذر بكل ود مع أصدق التمنيات 🤍</option>
+              </select>
+            </div>
+
+            <!-- Guest count -->
+            <div>
+              <label for="rsvp-count" class="block font-arabic-serif text-base text-champagne mb-2">
+                عدد الحضور (مع المرافقين)
+              </label>
+              <select id="rsvp-count" name="count" class="baroque-select text-right">
+                <option value="1">شخص واحد (1)</option>
+                <option value="2" selected>شخصان (2)</option>
+                <option value="3">3 أشخاص</option>
+                <option value="4">4 أشخاص</option>
+                <option value="5">عائلة (5 أشخاص أو أكثر)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Warm Wishes / Note -->
+          <div>
+            <label for="rsvp-wish" class="block font-arabic-serif text-base text-champagne mb-2">
+              كلمة تهنئة للعروسين (اختياري)
+            </label>
+            <textarea 
+              id="rsvp-wish" 
+              name="wish" 
+              rows="3" 
+              placeholder="اكتب أطيب أمنياتك ودعواتك للعروسين..." 
+              class="baroque-textarea text-right"
+            ></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="text-center pt-2">
+            <button type="submit" class="btn-baroque w-full sm:w-auto px-10 py-3 text-lg">
+              <span>تأكيد الرد وإرسال التهنئة</span>
+              <svg class="w-5 h-5 text-dark-navy" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+            </button>
+          </div>
+        </form>
+
+        <!-- Host shortcut link -->
+        <div class="text-center mt-6 pt-4 border-t border-antique-gold/20">
+          <button id="view-guestlist-btn" class="text-xs text-champagne/80 hover:text-champagne transition inline-flex items-center gap-1">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+            <span>عرض سجل الحضور (خاص بالعروسين)</span>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- WISHES & GUESTBOOK SECTION                                              -->
+    <!-- ======================================================================= -->
+    <section class="reveal-on-scroll baroque-card">
+      <!-- Corner ornaments -->
+      <svg class="corner-flourish corner-tl"><use href="#baroque-corner" /></svg>
+      <svg class="corner-flourish corner-tr"><use href="#baroque-corner" /></svg>
+      <svg class="corner-flourish corner-bl"><use href="#baroque-corner" /></svg>
+      <svg class="corner-flourish corner-br"><use href="#baroque-corner" /></svg>
+
+      <div class="baroque-card-inner">
+        <div class="text-center mb-6">
+          <span class="font-sans text-xs tracking-widest text-champagne uppercase">Guestbook & Wishes</span>
+          <h2 class="font-arabic-title text-3xl text-gold-gradient font-bold mt-1">دفتر التهاني والتباريك</h2>
+          <p class="font-arabic-serif text-sm text-ivory-muted mt-1">
+            أصدق الكلمات والدعوات التي عطّر بها الأحبة دعوتنا
+          </p>
+        </div>
+
+        <!-- Dynamic Wishes List -->
+        <div id="wishes-list" class="space-y-3 max-h-80 overflow-y-auto px-1">
+          <!-- Populated dynamically via rsvp.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- FOOTER                                                                  -->
+    <!-- ======================================================================= -->
+    <footer class="text-center space-y-4 pt-8 pb-12">
+      <!-- Acanthus divider -->
+      <div class="flex justify-center">
+        <svg class="w-48 h-8" viewBox="0 0 360 50">
+          <use href="#baroque-divider" />
+        </svg>
+      </div>
+
+      <p class="font-arabic-title text-2xl text-champagne">
+        دامت دياركم عامرة بالأفراح والمسرات
+      </p>
+      
+      <p class="font-latin-serif tracking-wider text-sm text-ivory-muted">
+        Bakri & Rehab Dallo • September 28, 2026
+      </p>
+
+      <p class="font-arabic-serif text-xs text-ivory-muted/60 mt-2">
+        نادي الضباط - الفرقان - صالة ايفانكا
+      </p>
+    </footer>
+
+  </main>
+
+  <!-- ========================================================================= -->
+  <!-- FLOATING AUDIO TOGGLE BUTTON                                              -->
+  <!-- ========================================================================= -->
+  <button id="audio-toggle-btn" class="audio-toggle-btn" title="تشغيل / كتم الموسيقى الهادئة">
+    <svg class="w-5 h-5 text-champagne" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+    </svg>
+  </button>
+
+  <!-- ========================================================================= -->
+  <!-- CONFIRMATION & WHATSAPP MODAL                                             -->
+  <!-- ========================================================================= -->
+  <div id="confirmation-modal" class="modal-backdrop" role="dialog" aria-modal="true">
+    <div class="modal-content text-center">
+      <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-royal-blue/60 border border-antique-gold flex items-center justify-center text-champagne shadow-gold-glow">
+        <svg class="w-8 h-8 text-champagne" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+
+      <h3 class="font-arabic-title text-3xl text-gold-gradient font-bold mb-2">تم تسجيل ردّكم بنجاح!</h3>
+      <p class="font-arabic-serif text-base text-ivory-muted mb-6 leading-relaxed">
+        شكراً لكم من القلب، تسعدنا مشاركتكم فرحتنا ونتطلع لرؤيتكم في ليلة العمر.
+      </p>
+
+      <!-- 1-Click WhatsApp Button -->
+      <div class="p-4 bg-dark-navy/80 border border-antique-gold/40 rounded mb-6 text-right">
+        <p class="font-arabic-serif text-sm text-champagne font-bold mb-2 flex items-center gap-2">
+          <span>📲 تأكيد الرد عبر واتساب مباشرة:</span>
+        </p>
+        <p class="text-xs text-ivory-muted mb-4">
+          يمكنك بنقرة واحدة إرسال رسالة التأكيد المهذبة والمجهزة مسبقاً عبر واتساب للعروسين:
+        </p>
+        <a id="whatsapp-share-btn" target="_blank" rel="noopener noreferrer" class="btn-baroque w-full text-base py-2.5">
+          <svg class="w-5 h-5 text-dark-navy" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.585 1.777.899 2.796.899 3.182 0 5.768-2.587 5.768-5.766.001-3.181-2.586-5.768-5.768-5.768zm7.399 5.766c.002 4.073-3.315 7.39-7.399 7.39-1.29 0-2.5-.339-3.565-.933l-3.966 1.04 1.058-3.864c-.672-1.109-1.026-2.385-1.027-3.633.002-4.074 3.319-7.391 7.403-7.391 4.08 0 7.396 3.318 7.396 7.391z"/>
+          </svg>
+          <span>إرسال التأكيد عبر واتساب</span>
+        </a>
+      </div>
+
+      <button id="close-confirmation-modal" class="btn-baroque-outline w-full py-2 text-sm font-arabic-serif">
+        إغلاق النافذة
+      </button>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- GUESTLIST ADMIN MODAL                                                     -->
+  <!-- ========================================================================= -->
+  <div id="guestlist-modal" class="modal-backdrop" role="dialog" aria-modal="true">
+    <div class="modal-content text-right">
+      <div class="flex items-center justify-between pb-3 border-b border-antique-gold/30">
+        <h3 class="font-arabic-title text-2xl text-champagne font-bold">سجل الحضور والردود</h3>
+        <button id="close-guestlist-modal" class="text-ivory-muted hover:text-white p-1 text-xl">&times;</button>
+      </div>
+
+      <!-- Summary metrics -->
+      <div id="guestlist-summary"></div>
+
+      <!-- Scrollable list of guests -->
+      <div id="guestlist-items" class="max-h-64 overflow-y-auto pr-1 my-3"></div>
+
+      <div class="flex justify-between items-center pt-3 border-t border-antique-gold/20">
+        <button id="clear-guestlist-btn" class="text-xs text-red-300 hover:text-red-400 underline">
+          مسح السجل المحلي
+        </button>
+        <button onclick="document.getElementById('guestlist-modal').classList.remove('active')" class="btn-baroque-outline py-1.5 px-4 text-xs">
+          إغلاق
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/countdown.js"></script>
+  <script src="assets/js/rsvp.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
